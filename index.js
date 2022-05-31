@@ -12,22 +12,13 @@ dbConnection();
 //3q8IWkzv1LmAoupt
 //andres28
 console.log(process.env);
-app.get('/', (req, res) => {
-
-
-
-
-
-
-
-
-
-
-
-
+app.get('/api/usuarios', (req, res) => {
     res.status(200).json({
         ok: true,
-        msg: 'hola mundo'
+        usuarios: [{
+            id: 2,
+            nombre: 'Andres taboada'
+        }]
     })
 
 })
